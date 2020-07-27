@@ -48,6 +48,16 @@
         </div>
         <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Submit</button>
       </form>
+
     </div>
+  </div>
+  <hr>
+  <div class="row col-xs-12" *ngIf="submitted">
+    <h3>Your data</h3>
+    <p>Username: {{ user.username }}</p>
+    <p>Mail:  {{ user.email }}</p>
+    <p>Secrete Question: Your first {{ user.secretQuestion }}</p>
+    <p>Answer:  {{ user.answer }}</p>
+    <p>Gender:  {{ user.gender }}</p>
   </div>
 </div>
